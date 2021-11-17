@@ -573,3 +573,22 @@ nav {
     animation-delay: 0.3s;
   }
 }
+@media screen and (min-width:467px) and (max-width:680px){
+   .myTestmonials .myContainer .testmonials-content .image-holder {
+    position: relative;
+    overflow: hidden;
+  }
+  .myTestmonials .myContainer .testmonials-content .image-holder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 250px 637px;
+    border-color: transparent transparent var(--secondary-color) transparent;
+    right: 0;
+    transition: 0.5s;
+  }
+  .myTestmonials .myContainer .testmonials-content:hover .image-holder::after {
+    border-width: 250px 637px 250px 0px;
+  }
+}
