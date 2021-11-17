@@ -1,0 +1,575 @@
+/* Start Global-styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arvo", serif;
+  background: #000;
+  scroll-behavior: smooth;
+}
+.myContainer {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  color: #fff;
+}
+p,
+i {
+  color: #fff;
+}
+
+/* End Global-styles */
+/* Start Variables */
+:root {
+  --section-padding: 40px;
+  --main-color: #950101;
+  --secondary-color: rgb(26, 26, 26);
+}
+/* End Variables */
+/* Start Nav-bar */
+.navbar-brand img {
+  width: 60px;
+}
+.navbar {
+  padding: 10px 40px;
+}
+nav {
+  background-color: var(--main-color);
+}
+.d-flex .btn-outline-success {
+  border-color: #000;
+  color: #000;
+}
+.d-flex .btn-outline-success:hover {
+  background: #000;
+  color: #fff;
+}
+.dropdown-menu {
+  background: #000;
+}
+.dropdown-menu li .dropdown-item {
+  color: #fff;
+}
+.dropdown-menu li a.dropdown-item:hover {
+  background: none;
+  border-bottom: solid 1px red;
+}
+.dropdown-divider {
+  border-color: #fff;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+/* End Nav-bar */
+/* Start Landing */
+.landing-page {
+  height: 100vh;
+  background: url(../images/young-fitness-man-studio.jpg) no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+}
+.landing-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+.landing-logo img {
+  width: 200px;
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.landing-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 90px;
+}
+.landing-text h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  width: 70%;
+  font-weight: 900;
+}
+.landing-text p {
+  font-size: 14px;
+  width: 70%;
+}
+
+.landing-text .mybtn-prrimary {
+  padding: 10px 70px;
+  display: inline-block;
+  transform: skew(8deg);
+  background: var(--main-color);
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.landing-text .mybtn-prrimary span {
+  display: inline-block;
+  transform: skew(-8deg);
+}
+.landing-text .mybtn-prrimary:hover {
+  background: #fff;
+  color: var(--main-color);
+}
+
+/* End Landing */
+/* Start features */
+.myFeatures {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.myFeatures .myContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carousel {
+  background: var(--secondary-color);
+  position: relative;
+  padding: 50px 90px;
+  height: 400px;
+  width: 60%;
+}
+.carousel-inner {
+  position: relative;
+}
+.carousel-item p {
+  margin-top: 50px;
+  font-size: 20px;
+  height: 180px;
+}
+.carousel-item span {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.myApp {
+  width: 35%;
+  display: flex;
+  height: 400px;
+  background: var(--secondary-color);
+  position: relative;
+  margin-left: 30px;
+}
+.myApp .appText {
+  width: 50%;
+  margin: 40px 0 0 60px;
+  color: #fff;
+}
+.myApp .appText h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.myApp .appText h3 span {
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 5px;
+  font-family: "Alfa Slab One", cursive;
+}
+.myApp .appText hr {
+  border: solid 1px var(--main-color);
+  background: none;
+  width: 30%;
+}
+.myApp .appText p {
+  font-size: 14px;
+}
+.myApp .appText .myLinks {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.myApp .appText .myLinks a {
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+.myApp .appText .myLinks a span {
+  font-size: 20px;
+}
+.googleLink,
+.appleLink {
+  display: flex;
+  padding: 5px 0;
+  background: rgb(168, 167, 167);
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.myApp .appText .myLinks i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.myApp .myLogo {
+  position: absolute;
+  right: -35px;
+  top: 30px;
+}
+.myApp .myLogo img {
+  width: 150px;
+}
+
+/* End features */
+/* Start testmonials */
+.myTestmonials .myContainer {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.myTestmonials .myContainer .testmonials-content .image-holder {
+  position: relative;
+  overflow: hidden;
+}
+.myTestmonials .myContainer .testmonials-content .image-holder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #95010138;
+}
+.myTestmonials .myContainer .testmonials-content .image-holder::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 0 250px 437px;
+  border-color: transparent transparent var(--secondary-color) transparent;
+  right: 0;
+  transition: 0.5s;
+}
+.myTestmonials .myContainer .testmonials-content:hover .image-holder::after {
+  border-width: 250px 437px 250px 0px;
+}
+.myTestmonials .myContainer .testmonials-content .image-holder img {
+  max-width: 100%;
+}
+.myTestmonials .myContainer .testmonials-content {
+  text-align: center;
+  background: var(--secondary-color);
+  position: relative;
+}
+.myTestmonials .myContainer .testmonials-content .box-text {
+  padding: 30px 30px 60px 30px;
+  /* display: none; */
+}
+
+.myTestmonials .myContainer .testmonials-content hr {
+  border-top: 3px solid var(--main-color);
+  background: none;
+  width: 50%;
+  margin-left: 80px;
+}
+.myTestmonials .myContainer .testmonials-content .box-text p {
+  font-size: 14px;
+}
+.myTestmonials .myContainer .testmonials-content a {
+  position: absolute;
+  text-decoration: none;
+  padding: 7px 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+  background: linear-gradient(
+    to right,
+    var(--main-color) 50%,
+    rgba(26, 26, 26) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: 0.5s;
+}
+.myTestmonials .myContainer .testmonials-content a:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.main-title {
+  position: relative;
+  border: 2px solid var(--secondary-color);
+  width: fit-content;
+  margin: 100px auto 0;
+  padding: 10px 20px;
+  transition: 0.5s;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.main-title:hover {
+  color: #fff;
+  border: 2px solid #000;
+  transition-delay: 0.5s;
+}
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--main-color);
+}
+.main-title::before {
+  left: -30px;
+}
+.main-title:hover::before {
+  animation: left-slide 0.5s linear forwards;
+  z-index: -1;
+}
+.main-title::after {
+  right: -30px;
+}
+.main-title:hover::after {
+  animation: right-slide 0.5s linear forwards;
+  z-index: -1;
+}
+
+/* End testmonials */
+/* Start contact */
+#contact {
+  padding-top: var(--section-padding);
+  position: absolute;
+  right: 50px;
+}
+#contact button {
+  background: var(--main-color);
+  color: #fff;
+}
+#contact .btn-close {
+  color: #000;
+  background: transparent;
+}
+#contact .btn-close i {
+  font-size: 20px;
+}
+.modal-content {
+  background: var(--secondary-color);
+  color: #fff;
+}
+#contact .btn-special {
+  transform: skew(8deg);
+}
+#contact .btn-special span {
+  transform: skew(-8deg);
+  display: inline-block;
+}
+/* End contact */
+
+/* Start footer */
+.main-footer {
+  display: flex;
+  background: var(--secondary-color);
+  flex-basis: calc(100% / 3);
+  justify-content: space-between;
+  margin-top: 79px;
+  padding: 20px 0;
+  align-items: center;
+  position: relative;
+}
+.left-footer a {
+  text-decoration: none;
+  background: var(--main-color);
+  padding: 40px 120px;
+  transform: skew(8deg) !important;
+  position: absolute;
+  top: 0;
+  left: -6px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.5s;
+}
+.left-footer a span {
+  display: inline-block;
+  transform: skew(-8deg);
+}
+
+.left-footer a:hover {
+  background: #fff;
+  color: var(--main-color);
+}
+
+/* Middle footer */
+.middle-footer ul {
+  display: flex;
+  list-style: none;
+}
+.middle-footer ul li {
+  margin-left: 40px;
+  position: relative;
+}
+.middle-footer ul li i {
+  color: #fff;
+}
+.middle-footer ul li a::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  border: dashed 2px #000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.middle-footer ul li a:hover::before {
+  animation: social 0.5s linear forwards;
+}
+
+/* Right footer */
+.right-footer {
+  margin-right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.right-footer i {
+  animation-name: footer;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* Lower footer */
+.low-footer {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+}
+.low-footer p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.low-footer p span {
+  color: var(--main-color);
+}
+/* End footer */
+
+/* Start Animation */
+@keyframes logo {
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes left-slide {
+  50% {
+    left: 0;
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes right-slide {
+  50% {
+    right: 0;
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes social {
+  50% {
+    border-color: var(--main-color);
+    transform: rotate(180deg);
+  }
+  100% {
+    border-color: var(--main-color);
+    transform: rotate(360deg);
+  }
+}
+@keyframes footer {
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes aymoon {
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* End Animation */
+/* media */
+@media (max-width: 1200px) {
+  .myFeatures .myContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .myApp {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .myApp .myLogo {
+    right: 20px;
+  }
+  .carousel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .myTestmonials .myContainer .testmonials-content .box-text {
+    display: none;
+  }
+  .myTestmonials .myContainer .testmonials-content .box-text p {
+    opacity: 0;
+  }
+  .myTestmonials .myContainer .testmonials-content:hover .box-text {
+    display: inline-block;
+  }
+  .myTestmonials .myContainer .testmonials-content:hover .box-text p {
+    animation: aymoon 1s linear forwards;
+    animation-delay: 0.3s;
+  }
+}

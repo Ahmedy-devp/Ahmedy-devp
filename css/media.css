@@ -1,0 +1,110 @@
+/* Small */
+@media (min-width: 768px) {
+  .myContainer {
+    width: 757px;
+  }
+}
+@media (max-width: 720px) {
+  .left-footer a {
+    padding: 40px 70px;
+  }
+}
+@media (max-width: 670px) {
+  .middle-footer ul {
+    margin-right: 50px;
+  }
+  .right-footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .carousel-item p {
+    font-size: 16px;
+  }
+  .carousel-item span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 630px) {
+  .right-footer {
+    margin-right: 70px;
+  }
+  .left-footer a {
+    padding: 46px 60px;
+  }
+
+  #contact {
+    right: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .middle-footer ul {
+    margin-left: 165px !important;
+  }
+}
+@media (max-width: 500px) {
+  .landing-text h1 {
+    font-size: 25px;
+  }
+  .landing-text p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 515px) {
+  .myApp .myLogo {
+    right: 5px;
+  }
+}
+@media (max-width: 477px) {
+  .carousel-item p {
+    font-size: 14px;
+  }
+  .carousel-item span {
+    font-size: 10px;
+  }
+  .myApp .myLogo {
+    display: none;
+  }
+  .myApp .appText {
+    margin: 15px auto;
+    width: 60%;
+  }
+}
+@media (max-width: 460px) {
+  .left-footer a {
+    padding: 49px 20px;
+    font-size: 12px;
+  }
+  .middle-footer ul {
+    margin-left: 70px !important;
+  }
+  .right-footer {
+    margin-left: -20px;
+  }
+  .low-footer p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 410px) {
+  .carousel {
+    padding: 50px 40px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .myContainer {
+    width: 985px;
+  }
+}
+@media (max-width: 970px) {
+  .middle-footer ul {
+    margin-left: 250px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .myContainer {
+    width: 1982px;
+  }
+}
